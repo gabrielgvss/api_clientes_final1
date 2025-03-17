@@ -86,7 +86,7 @@ public class ClienteFormRequest {
     }
 
     public Cliente toModel() {
-        return new Cliente(this.id, this.nascimento, this.cpf, this.nome, this.endereco, this.telefone, this.email);
+        return new Cliente(this.nascimento, this.cpf, this.nome, this.endereco, this.telefone, this.email);
     }
 
     public static ClienteFormRequest fromModel(Cliente cliente) {

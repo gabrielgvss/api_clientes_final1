@@ -23,6 +23,17 @@ public class Cliente {
         super();
     }
 
+    public Cliente(Long id, LocalDate nascimento, String cpf, String nome, String endereco, String telefone, String email) {
+        super();
+        this.id = id;
+        this.nascimento = nascimento;
+        this.cpf = cpf;
+        this.nome = nome;
+        this.endereco = endereco;
+        this.telefone = telefone;
+        this.email = email;
+    }
+
     public Cliente(LocalDate nascimento, String cpf, String nome, String endereco, String telefone, String email) {
         super();
         this.nascimento = nascimento;
@@ -33,8 +44,6 @@ public class Cliente {
         this.email = email;
     }
 
-    public Cliente(Long id, LocalDate nascimento, String cpf, String nome, String endereco, String telefone, String email) {
-    }
 
     public Long getId() {
         return id;
